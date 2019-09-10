@@ -73,6 +73,9 @@ class BookingsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+
+    //Create method Problem.  Wrong Step. Must Fix
     public function update(Request $request, $id)
     {
 

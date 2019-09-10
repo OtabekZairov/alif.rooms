@@ -105,6 +105,6 @@
     
     <script src="{{ asset('js/jquery-3.4.1.min.js') }}" defer></script>
     <script src="{{ asset('js/popper.js') }}" defer></script>
-    <script src="{{ asset('js/moment.min.js') }}" defer></script>
+
 </body>
 </html>
