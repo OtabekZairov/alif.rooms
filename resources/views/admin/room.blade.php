@@ -38,28 +38,32 @@
                                 <input type="file" class="form-control-file" name="image" id="exampleInputFile" aria-describedby="fileHelp">
                                 <small id="fileHelp" class="form-text text-muted">Please upload a valid image file. Size of image should not be more than 2MB.</small>
                             </div>        
-                </div>
-            </div></div>
-        </div>
+               </div>
+             </div>
+           </div>
+         </div>
        </div>
        <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-       <div class="form-group">
-          <label for="formGroupExampleInput" placeholder="Input Name"></label>
-          <input type="text" class="form-control" name="title" id="formGroupExampleInput" placeholder="Example input">
-       </div>
-       <div class="form-group">
-          <label for="exampleFormControlTextarea1" ></label>
-          <textarea class="form-control" name="textarea" id="exampleFormControlTextarea" placeholder="Description..." rows="3"></textarea>
-       </div>
-       <div>
-            <button type="submit" class="btn btn-primary">
-                Сохранить
-            </button>
-       </div></div>
-       </div></div></div>
+                  <div class="form-group">
+                     <label for="formGroupExampleInput" placeholder="Input Name"></label>
+                     <input type="text" class="form-control" name="title" id="formGroupExampleInput" placeholder="Example input">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleFormControlTextarea1" ></label>
+                     <textarea class="form-control" name="textarea" id="exampleFormControlTextarea" placeholder="Description..." rows="3"></textarea>
+                  </div>
+                  <div>
+                       <button type="submit" class="btn btn-primary">
+                           Сохранить
+                       </button>
+                  </div>
+               </div>
+             </div>
+          </div>
+        </div>
     </form>
 @endsection

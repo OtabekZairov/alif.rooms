@@ -32,13 +32,14 @@
                             </ul>
                         </div>
                     @endif
-                            <div class="form-group">
-                                <input type="file" class="form-control-file" name="image" id="exampleInputFile" aria-describedby="fileHelp" value="{{ $room->avatar }}">
-                                <small id="fileHelp" class="form-text text-muted">Please upload a valid image file. Size of image should not be more than 2MB.</small>
-                            </div>        
+                    <div class="form-group">
+                        <input type="file" class="form-control-file" name="image" id="exampleInputFile" aria-describedby="fileHelp" value="{{ $room->avatar }}">
+                        <small id="fileHelp" class="form-text text-muted">Please upload a valid image file. Size of image should not be more than 2MB.</small>
+                    </div>        
                 </div>
-            </div></div>
-        </div>
+             </div>
+           </div>
+         </div>
        </div>
        <div class="container">
         <div class="row justify-content-center">
@@ -53,11 +54,14 @@
           <label for="exampleFormControlTextarea1" ></label>
           <textarea class="form-control" name="textarea" id="exampleFormControlTextarea" placeholder="Description..." rows="3">{{ $room->description }}</textarea>
        </div>
-       <div>
-            <button type="submit" class="btn btn-primary">
-                Сохранить
-            </button>
-       </div></div>
-       </div></div></div>
-    </form>
+        <div>
+          <button type="submit" class="btn btn-primary">
+              Сохранить
+          </button>
+        </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </form>
 @endsection
