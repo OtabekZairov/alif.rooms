@@ -20,32 +20,32 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style rel="css/stylesheet">
         body, html {
-  height: 100%;
-}
-.bg {
-  /* The image used */
-  
-  background-color: rgb(0, 255, 195);
-  /* Full height */
-  height: 300%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: cover;
-}
-.bcg {
-  /* The image used */
-  background-image: url("/img/starroad.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: cover;
-}
+                    height: 100%;
+                   }
+                   .bg {
+                     /* The image used */
+                     
+                     background-color: rgb(0, 255, 195);
+                     /* Full height */
+                     height: 300%;
+                   
+                     /* Center and scale the image nicely */
+                     background-position: center;
+                     background-repeat: repeat-x;
+                     background-size: cover;
+                   }
+                   .bcg {
+                     /* The image used */
+                     background-image: url("/img/starroad.jpg");
+                   
+                     /* Full height */
+                     height: 100%;
+                   
+                     /* Center and scale the image nicely */
+                     background-position: center;
+                     background-repeat: repeat-x;
+                     background-size: cover;
+                   }
     </style>
 
 </head>

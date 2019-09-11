@@ -39,5 +39,5 @@ Route::get('/myroom/{id}', 'BookingsController@edit')->name('myroom.edit');
 
 Route::post('/myroom/{id}', 'BookingsController@update')->name('myroom.update');
 	
-//Route::post('/myroom/{id}', 'BookingsController@free')->name('myroom.free');
+Route::post('/myroom/{id}', 'BookingsController@free')->name('myroom.free');
 

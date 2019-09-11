@@ -105,13 +105,13 @@ class BookingsController extends Controller
     {
         $room = Room::find($id);
         $room->update([
-                'started_at'=> '',
-                'end s_in'=> '',
+                'started_at'=> ' ',
+                'end s_in'=> ' ',
                 'is_busy' => 0,
-                'username' => '',
-                'comment' => '',
+                'username' => ' ',
+                'comment' => ' ',
             ]);
-        return redirect()->route('home');
+        return back();
     }
 
     /**

@@ -46,7 +46,7 @@
 
                                             @if($room->booking && $room->booking->is_busy)
                                             <div class="row">
-                                            <form action="{{ route('home.free', $room->id) }}" method='post'>
+                                            <form action="{{ route('myroom.free', $room->id) }}" method='post'>
                                                 @csrf
                                                 
                                                 <input class="btn btn-primary" type="submit" value="free"/>
