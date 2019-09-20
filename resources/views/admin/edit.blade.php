@@ -1,8 +1,9 @@
 @extends('layouts.app')
 <div class="bcg">
 @section('content')
-  <form action="{{ route('room.update') }}" method="POST" enctype="multipart/form-data">
+  <form action="{{ route('room.update', $room->id) }}" method="POST" enctype="multipart/form-data">
     @csrf
+    @method('PUT')
     <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-12">

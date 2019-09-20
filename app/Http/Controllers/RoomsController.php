@@ -19,10 +19,10 @@ class RoomsController extends Controller
         //dd($request->all());
         $file = $request->file('image');
         if($file <> 0) {
-           $name = time() . "_" . md5($file->getFilename()) . "." . $file->extension();
+            $name = time() . "_" . md5($file->getFilename()) . "." . $file->extension();
             $file->move(public_path('images'), $name);
             $src = asset("images/" . $name);
-             Room::create([    
+            Room::create([    
                 'avatar' => $src,
                 'title'  => $request->input('title'),
                 'description' => $request->input('textarea'),        
@@ -34,61 +34,42 @@ class RoomsController extends Controller
                 
                 
             ]);  
-        }   
+        }
+
         return redirect()->route('home');
 
     }
 
 
 
-    public function edit($id)
-    {
+    public function edit($id){
         $room = Room::findOrFail($id);
         return view('admin.edit', compact('room'));
     } 
 
-    public function update(Request $request, $id)
-    {
+    public function update(Request $request, $id){
         $file = $request->file('image');
         $room = Room::find($id);
         if($file <> 0) {
-           $name = time() . "_" . md5($file->getFilename()) . "." . $file->extension();
+            $name = time() . "_" . md5($file->getFilename()) . "." . $file->extension();
             $file->move(public_path('images'), $name);
             $src = asset("images/" . $name);
-             $room->update([    
+            $room->update([    
                 'avatar' => $src,
                 'room_name'  => $request->input('title'),
-                'description' => $request->input('textarea'),
-             
-                
+                'description' => $request->input('textarea'),     
             ]);              
         } else {
             $room->update([    
                 'room_name'  => $request->input('title'),
                 'description' => $request->input('textarea'),
             ]);  
-        }   
+        }  
+
         return redirect()->route('admin.admin');
     }
 
-    /*public function free($id)
-
-    {
-        //dd($request->all());
-        $room = Room::find($id);
-        $room->update([
-            'room_id' => ' ',
-            'started_at'=> ' ',
-            'ends_in'=>' ',
-            'is_busy' => 0,
-            'username' => ' ',
-            'comment' => ' ',
-            ]);
-        return back();
-    }*/
-
-    public function delete($id)
-    {
+    public function delete($id){
         
         $room = Room::find($id);
         $room->delete();

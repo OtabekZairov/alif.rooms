@@ -33,7 +33,7 @@ Route::delete('/room/{id}', 'RoomsController@delete')->name('room.delete');
 
 Route::get('/room/{id}', 'RoomsController@edit')->name('room.edit');
 
-Route::post('/room/{id}/update', 'RoomsController@update')->name('room.update');
+Route::put('/room/{id}/update', 'RoomsController@update')->name('room.update');
 
 Route::get('/myroom/{id}', 'BookingsController@edit')->name('myroom.edit');
 

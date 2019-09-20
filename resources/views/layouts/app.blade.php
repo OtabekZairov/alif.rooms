@@ -25,7 +25,7 @@
                    .bg {
                      /* The image used */
                      
-                     background-color: rgb(0, 255, 195);
+                     background-color: #8a2be2;
                      /* Full height */
                      height: 300%;
                    
